@@ -1,14 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
 </head>
+
 <body>
-    <p>paragraf pierwszy</p>
-    <p>trzeci</p>
-    <p>czwarty</p>
-    <p>Paragraf piaty</p>
-    <p>Paragraf drugi</p>
+
+    <div id="formularz" >
+        <form action="https://formspree.io/your@email.com"  method="POST">
+            <label for="name">Imie</label><br>
+            <input type="text" id="name"><br>
+            
+            <label for="lastname">Nazwisko</label><br>
+            <input type="text" id="lastname"><br>
+
+            <label for="email">Nazwisko</label><br>
+            <input type="emai" id="email" name="_replyto"><br>
+           
+            <label for="number">Numer telefonu</label><br>
+            <input type="number" id="number"><br>
+            
+            <label for="password">Haslo</label><br>
+            <input type="password" name="password" id="password"><br>
+            
+            <label for="textarea">Wpisz wiadomość</label><br>
+            <textarea maxlength="100" name="textarea" id="textarea" cols="30" rows="10"></textarea><br>
+            <input type="submit" value="Send"><br>
+        </form>
+    </div>
+
+
 </body>
+
 </html>
